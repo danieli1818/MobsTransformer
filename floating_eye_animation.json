@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.floating_eye1.idle": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"part_inside_part": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 180],
+						"2.0": [0, 0, 360]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 4],
+						"2.0": [0, 0, 0]
+					}
+				},
+				"part": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 180],
+						"2.0": [0, 0, 360]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 10],
+						"2.0": [0, 0, 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}
