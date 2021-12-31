@@ -49,7 +49,7 @@ class JavaParser:
                str(block.ox) + ", " + str(block.oy) + ", " + str(block.oz) + ", " + \
                "ModelAxis." + str(block.axis) + ", " + str(block.angle) + ", " + \
                str(block.rx) + ", " + str(block.ry) + ", " + str(block.rz) + ", " + \
-               str(int(block.t)) + ", " + str(int(block.tx)) + ", " + str(int(block.ty))
+               str(int(block.t)) + ", " + str(int(block.get_tx())) + ", " + str(int(block.get_ty()))
 
     @staticmethod
     def _parse_animations(model_name, animations_names):

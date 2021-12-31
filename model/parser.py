@@ -45,10 +45,9 @@ class Parser:
             rotation_angle = 0
             rotation_origin = [0, 0, 0]
         faces = block_element["faces"]
-        tx = min(faces["east"]["uv"][0], faces["east"]["uv"][2])
-        ty = min(faces["up"]["uv"][1], faces["up"]["uv"][3])
+        faces = dict(map(lambda face: (face[0], (face[1]["uv"][:2], face[1]["uv"][2:])), faces.items()))
         return Block(size[0], size[1], size[2], offset[0], offset[1], offset[2], rotation_axis, rotation_angle,
-                     rotation_origin[0], rotation_origin[1], rotation_origin[2], texture_size, tx, ty)
+                     rotation_origin[0], rotation_origin[1], rotation_origin[2], texture_size, faces)
 
     @staticmethod
     def create_groups_tree_of_group(group, parent=None):
