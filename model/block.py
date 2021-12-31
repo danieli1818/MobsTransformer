@@ -27,6 +27,7 @@ class Block:
             face_uv = sorted(face_uv, key=lambda point: point[0])
             face_uv = sorted(face_uv, key=lambda point: point[1])
             self.faces[face_name] = face_uv
+            self.faces[face_name] = face_uv
 
     def get_tx(self):
         return self.faces["east"][0][0]
