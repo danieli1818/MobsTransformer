@@ -20,9 +20,9 @@ public class ThinBlock extends ModelBase {
 		super("dr_accio_mobs:thin_block", "block/thin_block");
 
 		EntityModelPart body = createPart("body", DamageableItem.DIAMOND_HOE);
-		body.addBox(0.25, 0.25, 1, 0.25, 0, 3, ModelAxis.x, 0, 0, 0, 0, 16, 0, 2);
-		body.addBox(1, 0, 2, 0, 0, 0, ModelAxis.x, 0, 0, 0, 0, 16, 0, 0);
-		body.addBox(1, 0.25, 1, 0, 0, 2, ModelAxis.x, 0, 0, 0, 0, 16, 0, 2);
+		body.addBox(0.25, 0.25, 1, 0.25, 0, 3, ModelAxis.x, 0, 0, 0, 0, 16, 6, 0, 1, 1, 1);
+		body.addBox(1, 0, 2, 0, 0, 0, ModelAxis.x, 0, 0, 0, 0, 16, 0, 0, 1, 0, 2);
+		body.addBox(1, 0.25, 1, 0, 0, 2, ModelAxis.x, 0, 0, 0, 0, 16, 10, 0, 1, 1, 1);
 		addPart(new Part(body, new Offset(0, 0, 0), new EulerAngle(0, 0, 0)));
 		Bone bBody = new Bone(body);
 		

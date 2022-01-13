@@ -45,7 +45,7 @@ public class {MODEL_NAME}Animation{ANIMATION_NAME} implements Animation {
 
     private Animation getPartAnimation(String partName) {
         String[] partNameArray = partName.split("/");
-        return this.partsAnimations.get(partNameArray[partNameArray.length]);
+        return this.partsAnimations.get(partNameArray[partNameArray.length - 1]);
     }
 
 

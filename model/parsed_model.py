@@ -58,5 +58,6 @@ class ParsedModel:
             yield node
             queue.extend(node.children)
 
-
+    def get_groups_blocks(self):
+        return self.groups_blocks.copy()
 
